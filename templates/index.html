@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Crop Prediction Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            color: #fff;
+            border-radius: 0 0 50px 50px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #fff;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-card h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crop Prediction Store</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/project">Predict Crop</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Grow Smarter with Crop Prediction Store</h1>
+        <p>Transform your farming journey with our cutting-edge technology. Analyze soil, predict crops, and shop premium agricultural products—all in one vibrant platform!</p>
+        <a href="/project" class="btn">Start Predicting Now</a>
+    </div>
+
+    <div class="container">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Smart Crop Prediction</h3>
+                <p>Upload a soil image and get personalized crop recommendations based on advanced analysis and real-time weather data.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Wide Crop Variety</h3>
+                <p>From rice to coffee, we support 22 diverse crops to suit every climate and soil type.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Premium Products</h3>
+                <p>Explore our store for high-quality seeds, fertilizers, and tools to boost your harvest.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sustainable Farming</h3>
+                <p>Our insights promote eco-friendly practices for a greener, healthier planet.</p>
+            </div>
+        </div>
+
+        <h2>Ready to Grow?</h2>
+    </div>
+
+    <footer>
+        <p>© 2025 Crop Prediction Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

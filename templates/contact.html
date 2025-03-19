@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Crop Prediction Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crop Prediction Store</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/project">Predict Crop</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="/contact" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <br>
+        </form>
+
+        {% if success %}
+            <div class="success">{{ success }}</div>
+        {% endif %}
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <div class="contact-info">
+            <br>
+            <h3>Get in Touch</h3>
+            <p>Email: balakpgoddati@gmail.com</p>
+            <p>Phone: +91 6304023739</p>
+            <p>Address: Hyderabad</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Crop Prediction Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

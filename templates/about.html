@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Crop Prediction Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crop Prediction Store</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/project">Predict Crop</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Dive into the world of smart farming with Crop Prediction Store! Our vibrant platform uses cutting-edge tech to analyze soil and weather, delivering colorful crop insights for your land.</p>
+        <p>We’re here to make agriculture exciting, sustainable, and profitable—join the green revolution today!</p>
+
+        <br>
+        <h3>Our Supported Crops</h3>
+        <p>Explore the vibrant range of crops we predict:</p>
+        <br>
+        <br>
+        <div class="crop-list">
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/rice.jpg') }}" alt="Rice">
+                <h4>Rice</h4>
+                <p>A staple food crop requiring high water levels and warm climates, ideal for wetland farming.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/maize.jpg') }}" alt="Maize">
+                <h4>Maize</h4>
+                <p>A versatile cereal grain that thrives in warm, sunny conditions with well-drained soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/jute.jpg') }}" alt="Jute">
+                <h4>Jute</h4>
+                <p>A fiber crop used for textiles, grown in hot, humid climates with rich, loamy soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/cotton.jpg') }}" alt="Cotton">
+                <h4>Cotton</h4>
+                <p>A major fiber crop that needs warm temperatures and moderate rainfall for optimal growth.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/coconut.jpg') }}" alt="Coconut">
+                <h4>Coconut</h4>
+                <p>A tropical crop producing fruit and oil, requiring sandy soil and high humidity.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/papaya.jpg') }}" alt="Papaya">
+                <h4>Papaya</h4>
+                <p>A juicy fruit crop that grows well in warm, frost-free areas with well-drained soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/orange.jpg') }}" alt="Orange">
+                <h4>Orange</h4>
+                <p>A citrus fruit crop thriving in subtropical climates with well-drained, slightly acidic soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/apple.jpg') }}" alt="Apple">
+                <h4>Apple</h4>
+                <p>A temperate fruit crop needing cold winters and well-drained, loamy soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/muskmelon.jpg') }}" alt="Muskmelon">
+                <h4>Muskmelon</h4>
+                <p>A sweet melon crop that prefers warm, sunny conditions and sandy loam soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/watermelon.jpg') }}" alt="Watermelon">
+                <h4>Watermelon</h4>
+                <p>A refreshing fruit crop requiring warm weather and well-drained, sandy soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/grapes.jpg') }}" alt="Grapes">
+                <h4>Grapes</h4>
+                <p>A fruit crop for wine and table use, grown in temperate climates with well-drained soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/mango.jpg') }}" alt="Mango">
+                <h4>Mango</h4>
+                <p>A tropical fruit crop that thrives in hot, humid conditions with well-drained soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/banana.jpg') }}" alt="Banana">
+                <h4>Banana</h4>
+                <p>A tropical fruit crop needing warm temperatures, high humidity, and rich, loamy soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/pomegranate.jpg') }}" alt="Pomegranate">
+                <h4>Pomegranate</h4>
+                <p>A drought-tolerant fruit crop that grows well in semi-arid conditions with loamy soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/lentil.jpg') }}" alt="Lentil">
+                <h4>Lentil</h4>
+                <p>A legume crop rich in protein, suited to cool, dry climates with well-drained soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/blackgram.jpg') }}" alt="Blackgram">
+                <h4>Blackgram</h4>
+                <p>A pulse crop that grows in warm climates with well-drained, fertile soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/mungbean.jpg') }}" alt="Mungbean">
+                <h4>Mungbean</h4>
+                <p>A legume crop thriving in warm, dry conditions with sandy loam soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/mothbeans.jpg') }}" alt="Mothbeans">
+                <h4>Mothbeans</h4>
+                <p>A drought-resistant legume crop suited to arid regions with sandy soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/pigeonpeas.jpg') }}" alt="Pigeonpeas">
+                <h4>Pigeonpeas</h4>
+                <p>A perennial legume crop that grows in warm climates with well-drained soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/kidneybeans.jpg') }}" alt="Kidneybeans">
+                <h4>Kidneybeans</h4>
+                <p>A protein-rich legume crop needing warm weather and loamy, well-drained soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/chickpea.jpg') }}" alt="Chickpea">
+                <h4>Chickpea</h4>
+                <p>A hardy legume crop suited to cool, dry climates with well-drained soil.</p>
+            </div>
+            <div class="crop-item">
+                <img src="{{ url_for('static', filename='images/coffee.jpg') }}" alt="Coffee">
+                <h4>Coffee</h4>
+                <p>A beverage crop grown in tropical highlands with rich, well-drained soil.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Crop Prediction Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
